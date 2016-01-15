@@ -1,0 +1,63 @@
+body {
+  border-bottom:0px;
+  margin:0px;
+  font-family: "Lato","나눔고딕코딩";
+  font-size:14px;
+}
+
+.page {
+  background:#EEF;
+  position: relative;
+  min-height: 100%;
+}
+
+.page .title {
+  height:70px;
+  width: 100%;
+}
+
+.page .title label {
+  position: relative;
+  top:10px;
+  margin-left:10px;
+  font-size:42px;
+  
+}
+
+.page .contents{
+  padding:5px;
+  font-size:14pt;
+
+}
+
+div.codebox {
+  margin-left:10px;
+}
+.syntaxhighlighter {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+div.codebox pre{
+  background: #1b2426 ;
+  color:#CCC;
+  font-family: Bitstream Vera Sans Mono;
+  font-size:12pt;
+  padding:10px;
+}
+
+#page00 {background:#999999;}
+#page01 {background:#F79BC4;}
+#page02 {background:#FDD1AC;}
+#code2_1{width:50%;float:left;}
+#code2_2{width:50%;float:left;}
+#page03 {background:#FFF9AF;}
+#page03 {background:#CDFEA2;}
+/*
+F79BC4
+FDD1AC
+FFF9AF
+CDFEA2
+A9C8FE
+959BF9
+D1B3FD
+*/

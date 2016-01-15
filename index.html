@@ -1,0 +1,112 @@
+<html>
+<head>
+
+<link rel="stylesheet" type='text/css' href="http://fonts.googleapis.com/css?family=Lato:300">
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Loved+by+the+King'>
+<link rel="stylesheet" type='text/css' href="lib/font-awesome-4.5.0/css/font-awesome.css"/>
+<link rel="stylesheet" type="text/css" href="lib/jquery-ui-1.11.4/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="lib/syntaxhighlighter_3.0.83/styles/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="lib/syntaxhighlighter_3.0.83/styles/shThemeRDark.css"/>
+
+
+<link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+  <div id="page00" class="page">
+    <div class="title">
+      <label>0. intro..</label>
+    </div>
+
+    <div class="contents">
+    </div>
+  </div>
+
+  <div id="page01" class="page">
+    <div class="title">
+      <label>1. Java - Javascript</label>
+    </div>
+
+    <div class="contents">
+      <div class="center01">
+        Java?
+        <div></div>
+        Javascript?
+      </div>
+    </div> <!-- end of contents-->
+  </div>
+
+  <div id="page02" class="page">
+    <div class="title">
+      <label>2. Scope</label>
+    </div>
+    <div class="contents">
+      <div id="code2_1">
+        sample02_1.js
+        <div class="codebox">
+          <pre class="brush: js">
+var x = 0;
+function test01() {
+  log("local before :", x);
+  x = 10;
+  log("local after :", x);
+}
+log("global before :", x);
+test01();
+log("global after :", x);</pre>
+          <pre>
+global before :  0
+local before : 0
+local after : 10
+global after :  10</pre>
+        </div>
+      </div>
+      <div id="code2_2">
+        sample02_2.js
+        <div class="codebox">
+          <pre class="brush: js">
+var x = 0;
+function test01() {
+  log("local before :", x);
+  var x = 10;
+  log("local after :", x);
+}
+log("global before :", x);
+test01();
+log("global after :", x);</pre>
+        <pre>
+global before : 0
+local before : undefined
+local after : 10
+global after : 0</pre>
+        </div>
+      </div>
+      > 변수 호이스팅... 
+    </div> <!-- end of contents-->
+  </div>
+  <div id="page03" class="page">
+    <div class="title">
+      <label>3. scope</label>
+    </div>
+  </div>
+  <div id="page04" class="page">
+    <div class="title">
+      4. 
+    </div>
+  </div>
+
+</body>
+<!-- [import js] jQuery & jQuery UI-->
+<script type="text/javascript" src="lib/jquery-2.2.0/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="lib/jquery-ui-1.11.4/jquery-ui.js"></script>
+<!-- [import js] scrollify -->
+<!-- <script type="text/javascript" src="lib/Scrollify-master/jquery.scrollify.js"></script> -->
+<!-- [import js] panel snap -->
+<script type="text/javascript" src="lib/jquery-panelsnap-0.15.1/jquery.panelSnap.js"></script>
+  
+<!-- [import js] syntax highligher -->
+<script type="text/javascript" src="lib/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+<script type="text/javascript" src="lib/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+<!-- [import js] page javascript-->
+<script type="text/javascript" src="index.js"></script>
+</html>
